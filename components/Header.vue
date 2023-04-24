@@ -16,7 +16,6 @@
       </ul>
       <Icon name="gala:bell" class="cursor-pointer text-white w-5 h-5" />
     </div>
-    <nav></nav>
   </header>
 </template>
 <script lang="ts">
