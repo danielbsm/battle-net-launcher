@@ -1,23 +1,26 @@
 <template>
-  <div class="flex h-screen pt-6 bg-custom">
-    <div class="flex h-full flex-col w-4/5 px-6">
+  <div class="bg-custom flex h-screen pt-6">
+    <div class="flex h-full flex-col px-6">
       <Header />
       <NavBar />
       <Main />
     </div>
-    <div class="chat w-1/5">
+    <div class="chat mr-5">
       <Chat />
     </div>
-    <popup-dialog />
+    <popup-modal />
   </div>
 </template>
 <script lang="ts">
+import PopupModal from "~/components/PopupModal.vue";
 export default {
+  components: { PopupModal },
   name: "default",
 };
 </script>
 <style>
 .bg-custom {
+  min-width: 1000px;
   background: rgb(21, 23, 30);
   background: linear-gradient(
     197deg,

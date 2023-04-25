@@ -1,5 +1,5 @@
 <template>
-  <section class="nav-vertical flex flex-col w-1/5">
+  <section class="nav-vertical flex flex-col">
     <div class="flex flex-col flex-1">
       <img src="/logo.png" alt="Dragonflights" width="284" height="140" />
       <nav class="flex-1 ml-4">
@@ -36,7 +36,7 @@
         <Icon name="ep:arrow-down-bold" class="w-3 h-3" />
       </button>
       <button
-        class="bg-[--primary] text-start pl-2 rounded text-gray-300 h-14 flex justify-center items-center"
+        class="bg-[#0074E0] text-start pl-2 rounded text-gray-300 h-14 flex justify-center items-center"
       >
         <span class="text-xl font-bold text-center flex-1">Jogar</span>
         <div
@@ -51,3 +51,8 @@
     </div>
   </section>
 </template>
+<style lang="scss" scoped>
+.nav-vertical {
+  width: 330px;
+}
+</style>
