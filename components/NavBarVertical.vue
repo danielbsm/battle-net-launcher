@@ -36,7 +36,7 @@
         <Icon name="ep:arrow-down-bold" class="w-3 h-3" />
       </button>
       <button
-        class="bg-blue-500 text-start pl-2 rounded text-gray-300 h-14 flex justify-center items-center"
+        class="bg-[--primary] text-start pl-2 rounded text-gray-300 h-14 flex justify-center items-center"
       >
         <span class="text-xl font-bold text-center flex-1">Jogar</span>
         <div

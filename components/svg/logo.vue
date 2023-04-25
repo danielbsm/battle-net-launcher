@@ -1,6 +1,6 @@
 <template>
   <svg
-    :class="`color-${color}`"
+    :class="`fill-[--${color}]`"
     :width="size"
     :height="size"
     focusable="false"
@@ -29,8 +29,3 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
-.color-primary {
-  fill: var(--primary);
-}
-</style>

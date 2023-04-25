@@ -8,6 +8,7 @@
     <div class="chat w-1/5">
       <Chat />
     </div>
+    <popup-dialog />
   </div>
 </template>
 <script lang="ts">
