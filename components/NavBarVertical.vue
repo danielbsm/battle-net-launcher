@@ -5,16 +5,24 @@
       <nav class="flex-1 ml-4">
         <ul class="text-gray-300 font-medium mt-8 grid gap-3">
           <li>
-            <Icon name="clarity:shopping-cart-line" class="w-6 mr-2 h-6" />
-            Loja World of Warcraft
+            <a href="#" class="hover:text-white"
+              ><Icon name="clarity:shopping-cart-line" class="w-6 mr-2 h-6" />
+              Loja World of Warcraft</a
+            >
           </li>
           <li>
-            <Icon name="material-symbols:forum-outline" class="w-6 mr-2 h-6" />
-            Fóruns <Icon name="ic:round-open-in-new" class="w-23 h-3" />
+            <a href="#" class="hover:text-white">
+              <Icon
+                name="material-symbols:forum-outline"
+                class="w-6 mr-2 h-6" />
+              Fóruns <Icon name="ic:round-open-in-new" class="w-3 h-3"
+            /></a>
           </li>
           <li>
-            <Icon name="ph:seal-warning-bold" class="w-6 mr-2 h-6" /> Notas do
-            Patch
+            <a href="#" class="hover:text-white">
+              <Icon name="ph:seal-warning-bold" class="w-6 mr-2 h-6" /> Notas do
+              Patch</a
+            >
           </li>
         </ul>
       </nav>
@@ -24,19 +32,19 @@
         >Versão do jogo e conta</span
       >
       <button
-        class="bg-zinc-700 text-start px-2 rounded text-gray-300 h-8 flex justify-between items-center"
+        class="bg-zinc-700 text-start px-2 rounded text-gray-300 h-8 flex justify-between items-center hover:bg-zinc-600 hover:text-white"
       >
         <span>World of Warcraft</span>
         <Icon name="ep:arrow-down-bold" class="w-3 h-3" />
       </button>
       <button
-        class="bg-zinc-700 text-start px-2 rounded text-gray-300 h-8 flex justify-between items-center"
+        class="bg-zinc-700 text-start px-2 rounded text-gray-300 h-8 flex justify-between items-center hover:bg-zinc-600 hover:text-white"
       >
         <span>WoW1 (US) - Dragonflight</span>
         <Icon name="ep:arrow-down-bold" class="w-3 h-3" />
       </button>
       <button
-        class="bg-[#0074E0] text-start pl-2 rounded text-gray-300 h-14 flex justify-center items-center"
+        class="bg-[#0074E0] hover:bg-[--primary] text-start pl-2 rounded text-gray-300 h-14 flex justify-center items-center"
       >
         <span class="text-xl font-bold text-center flex-1">Jogar</span>
         <div
@@ -53,6 +61,17 @@
 </template>
 <style lang="scss" scoped>
 .nav-vertical {
-  width: 330px;
+  min-width: 330px;
+  .options {
+    svg {
+      transition: 300ms;
+    }
+    &:hover {
+      svg {
+        transition: 300ms;
+        transform: rotate(90deg);
+      }
+    }
+  }
 }
 </style>

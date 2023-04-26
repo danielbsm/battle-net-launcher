@@ -1,6 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between px-6 w-4/5">
-    <!-- <warning /> -->
+  <div class="flex flex-col justify-between px-6">
     <section class="content overflow-y-scroll pr-1 pb-2">
       <div class="carousel flex flex-col rounded mb-5">
         <div class="carousel-img mb-2">
@@ -103,17 +102,5 @@ export default {
       max-height: 225px;
     }
   }
-}
-::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #313239;
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #41424d;
 }
 </style>

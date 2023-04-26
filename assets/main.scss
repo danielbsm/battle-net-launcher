@@ -6,3 +6,16 @@
   --primary: #148eff;
   --secondary: #15171e;
 }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313239;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #41424d;
+}
