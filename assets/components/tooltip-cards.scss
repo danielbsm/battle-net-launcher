@@ -1,0 +1,84 @@
+@mixin arrows($position, $borderPx, $positionArrow, $borderColor) {
+  content: '';
+  position: absolute;
+  border: $borderPx solid transparent;
+  bottom: 100%;
+
+  /* Posição da seta(arrow) sobre o container */
+  @if $position == 'top' {
+    top: calc($positionArrow);
+    left: 10px;
+    border-top-color: $borderColor;
+  } @else if $position == 'right' {
+    bottom: calc($positionArrow - $borderPx);
+    border-bottom-color: $borderColor;
+  } @else if $position == 'bottom' {
+    right: calc($positionArrow - $borderPx);
+    border-bottom-color: $borderColor;
+  } @else if $position == 'left' {
+    left: calc($positionArrow - $borderPx);
+    border-bottom-color: $borderColor;
+  }
+}
+
+@mixin card($position, $start, $minWidth, $showArrow, $positionArrow) {
+  position: absolute;
+  background-color: #1a1c23;
+  border-radius: 6px;
+  border: 1px solid #33333a;
+
+  z-index: 2;
+  min-width: $minWidth;
+
+  @if $start == 'right' {
+    right: 0;
+  } @else if $start == 'left' {
+    left: 0;
+  }
+
+  /* Posição do card relativo a div pai */
+  @if $position == 'top' {
+    @if $showArrow {
+      bottom: calc(100% + 11px);
+    } @else {
+      bottom: 100%;
+    }
+  }
+  @if $position == 'bottom' {
+    @if $showArrow {
+      top: calc(100% + 11px);
+    } @else {
+      top: 100%;
+    }
+  }
+
+  /* Mostra/Esconde a seta(arrow) no card */
+  @if $showArrow {
+    &::before {
+      @include arrows($position, 10px, $positionArrow, #33333a);
+    }
+    &::after {
+      @include arrows($position, 9px, $positionArrow, #1a1c23);
+    }
+  }
+}
+
+.card-right-to-left-chat {
+  @include card('bottom', 'right', 100%, true, 6.5%);
+}
+
+.card-bottom-chat {
+  @include card('bottom', 'right', 100%, true, 31%);
+}
+
+.card-top-without-arrow {
+  @include card('top', '', 100%, false, 6.5%);
+}
+
+.card-left-to-right-menu-launcher {
+  @include card('bottom', 'left', 100%, true, 92%);
+}
+
+.card-top-left-to-right-aside-settings {
+  @include card('top', 'left', 100%, true, 100%);
+}

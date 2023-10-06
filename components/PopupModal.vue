@@ -23,18 +23,19 @@
   </div>
 </template>
 <script lang="ts">
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
   data() {
     return {
       showModal: true,
-    };
+    }
   },
   methods: {
     closeModal() {
-      this.showModal = false;
+      this.showModal = false
     },
   },
-};
+})
 </script>
 <style lang="scss" scoped>
 .modal {

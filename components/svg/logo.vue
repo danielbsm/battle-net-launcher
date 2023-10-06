@@ -1,6 +1,6 @@
 <template>
   <svg
-    :class="`fill-[--${color}]`"
+    :class="`fill-[--primary]`"
     :width="size"
     :height="size"
     focusable="false"
@@ -13,8 +13,9 @@
   </svg>
 </template>
 <script lang="ts">
-export default {
-  name: "logo",
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: 'logo',
   props: {
     size: {
       type: Number,
@@ -24,8 +25,8 @@ export default {
     color: {
       type: String,
       required: false,
-      default: "primary",
+      default: '--primary',
     },
   },
-};
+})
 </script>

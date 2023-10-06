@@ -1,0 +1,182 @@
+[
+  {
+    "username": "Wolfullus",
+    "isOn": true,
+    "status": "Online",
+    "favorite": true,
+    "playing": {
+      "status": true,
+      "game-slug": "wow",
+      "game-name": "Word of Warcraft",
+      "game-location": "Terraço dos Magísteres - Azralon"
+    }
+  },
+  {
+    "username": "Liius",
+    "isOn": true,
+    "status": "Online",
+    "favorite": true,
+    "playing": {
+      "status": true,
+      "game-slug": "wow",
+      "game-name": "Word of Warcraft",
+      "game-location": "Templo negro - Azralon"
+    }
+  },
+  {
+    "username": "Pinion",
+    "isOn": true,
+    "status": "Online",
+    "favorite": true,
+    "playing": {
+      "status": true,
+      "game-slug": "wow",
+      "game-name": "Word of Warcraft",
+      "game-location": "Ilhas do dragão - Azralon"
+    }
+  },
+  {
+    "username": "gamer 2",
+    "isOn": true,
+    "status": "Online",
+    "favorite": false,
+    "playing": {
+      "status": true,
+      "game-slug": "overwatch",
+      "game-name": "Overwatch",
+      "game-location": "Numbani"
+    }
+  },
+  {
+    "username": "Rodrigo",
+    "isOn": true,
+    "status": "Online",
+    "favorite": true,
+    "playing": {
+      "status": true,
+      "game-slug": "diablo",
+      "game-name": "Diablo",
+      "game-location": "Normal - Campo de batalha - Belial sss"
+    }
+  },
+  {
+    "username": "FiveShots",
+    "isOn": true,
+    "status": "Online",
+    "favorite": false,
+    "playing": {
+      "status": true,
+      "game-slug": "hearthstone",
+      "game-name": "Hearthstone",
+      "game-location": "Batalhando na arena"
+    }
+  },
+  {
+    "username": "Stellar",
+    "isOn": true,
+    "status": "Online",
+    "favorite": false,
+    "playing": {
+      "status": true,
+      "game-slug": "starcraft",
+      "game-name": "StarCraft",
+      "game-location": "Normal - River Crossing"
+    }
+  },
+  {
+    "username": "MarcosDuarte",
+    "isOn": false,
+    "status": "Ausente há 60 dias",
+    "favorite": true,
+    "playing": {
+      "status": false,
+      "game-slug": "",
+      "game-name": "",
+      "game-location": ""
+    }
+  },
+  {
+    "username": "Jubileu",
+    "isOn": false,
+    "status": "Ausente há 150 dias",
+    "favorite": true,
+    "playing": {
+      "status": false,
+      "game-slug": "",
+      "game-name": "",
+      "game-location": ""
+    }
+  },
+  {
+    "username": "game-slugr",
+    "isOn": false,
+    "status": "Ausente há 7 dias",
+    "favorite": false,
+    "playing": {
+      "status": false,
+      "game-slug": "",
+      "game-name": "",
+      "game-location": ""
+    }
+  },
+  {
+    "username": "Queara",
+    "isOn": false,
+    "status": "Offline",
+    "favorite": false,
+    "playing": {
+      "status": false,
+      "game-slug": "",
+      "game-name": "",
+      "game-location": ""
+    }
+  },
+  {
+    "username": "BreadOff",
+    "isOn": false,
+    "status": "Offline",
+    "favorite": true,
+    "playing": {
+      "status": false,
+      "game-slug": "",
+      "game-name": "",
+      "game-location": ""
+    }
+  },
+  {
+    "username": "GoldTwig",
+    "isOn": false,
+    "status": "Offline",
+    "favorite": true,
+    "playing": {
+      "status": false,
+      "game-slug": "",
+      "game-name": "",
+      "game-location": ""
+    }
+  },
+  {
+    "username": "Jodo",
+    "isOn": false,
+    "status": "Offline",
+    "favorite": false,
+    "playing": {
+      "status": false,
+      "game-slug": "",
+      "game-name": "",
+      "game-location": ""
+    }
+  },
+  {
+    "username": "Radcall",
+    "isOn": false,
+    "status": "Offline",
+    "favorite": false,
+    "playing": {
+      "status": false,
+      "game-slug": "",
+      "game-name": "",
+      "game-location": ""
+    }
+  }
+]

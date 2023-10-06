@@ -1,0 +1,48 @@
+:root {
+  --primary: #0074e0;
+  --secondary: #15171e;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313239;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #41424d;
+}
+
+body {
+  margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    'header header chat'
+    'nav nav chat'
+    'aside main chat';
+  align-content: flex-start;
+
+  grid-template-rows: auto auto 1fr;
+  height: 100vh;
+  overflow-x: hidden;
+  padding: 32px 0 0 20px;
+  min-width: 1000px;
+  background: rgb(21, 23, 30);
+  background: linear-gradient(
+    261deg,
+    rgba(21, 23, 30, 1) 0%,
+    rgba(21, 23, 30, 1) 17%,
+    rgba(21, 23, 30, 1) 57%,
+    rgba(64, 40, 60, 1) 89%,
+    rgba(82, 45, 82, 1) 100%
+  );
+}
+.separator {
+  border-bottom: 1px solid rgba(58, 58, 63, 0.9);
+}
